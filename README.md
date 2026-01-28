@@ -55,4 +55,4 @@ cd <YOUR_PROJECT_NAME>
 ```
 <h6 align="center">©️ PROJECT | M Builds Stuios</h6>
 
-<p align="center">© 2026 Mbuilds Stuios. Developed with ❤️ by MNKY_lk  Vikum KAvinda Narangoda-.</p>
+<p align="center">© 2026 Mbuilds Stuios. Developed with ❤️ by MNKY_lk  Vikum KAvinda Narangoda.</p>
