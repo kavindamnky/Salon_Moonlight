@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-    <img src="https://cdn.discordapp.com/attachments/1150175112872591451/1465677686226686096/screencapture-192-168-1-142-8080-2026-01-27-17_28_35.png" alt="Moonlight Salon" width="700"/>
+    <img src="https://res.cloudinary.com/df5ahm9sm/image/upload/v1768989887/logo_moonlightlong_izcp91.png" alt="Moonlight Salon" width="700"/>
 </p>
 
 <p align="center">
@@ -154,7 +154,7 @@ This platform is designed to reflect elegance, trust, and premium service while 
 
 ## 🌐 Live Demo
 
-Experience the luxury at: **[https://moonlightsalon.lk](https://moonlightsalon.lk)**
+Experience the luxury at: **[https://moonlightsalon.lk](https://moonlight-test.netlify.app/)**
 
 ### Explore These Pages:
 - 🏠 **Home** - Stunning hero section with animations
