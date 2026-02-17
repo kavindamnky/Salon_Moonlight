@@ -6,45 +6,52 @@ import serviceNails from "@/assets/service-nails.jpg";
 import serviceMakeup from "@/assets/service-makeup.jpg";
 import serviceSkincare from "@/assets/service-skincare.jpg";
 import serviceBridal from "@/assets/service-bridal.jpg";
+import serviceFacial from "@/assets/service-facial.jpg";
 // Add your new service image import here
 // import serviceSpa from "@/assets/service-spa.jpg";
 
 const services = [
   {
-    title: "Hair Styling",
-    description: "Expert cuts, colors, and treatments for your perfect look",
+    title: "Hair Treatments",
+    description: "Expert cuts, colors, Threading and treatments for your perfect look",
     image: serviceHair,
-    price: "From $80",
+    price: "From rs.1,500",
+  },
+    {
+    title: "Facial",
+    description: "Rejuvenating facials and premium skin treatments",
+    image: serviceFacial,
+    price: "From rs.5,000",
   },
   {
     title: "Nail Artistry",
     description: "Luxury manicures, pedicures, and custom nail designs",
     image: serviceNails,
-    price: "From $45",
+    price: "From rs.1,000",
   },
+  // {
+  //   title: "Makeup",
+  //   description: "Professional makeup for every occasion",
+  //   image: serviceMakeup,
+  //   price: "From $120",
+  // },
+  // {
+  //   title: "Skincare",
+  //   description: "Rejuvenating facials and premium skin treatments",
+  //   image: serviceSkincare,
+  //   price: "From $95",
+  // },
   {
-    title: "Makeup",
-    description: "Professional makeup for every occasion",
-    image: serviceMakeup,
-    price: "From $120",
-  },
-  {
-    title: "Skincare",
-    description: "Rejuvenating facials and premium skin treatments",
-    image: serviceSkincare,
-    price: "From $95",
-  },
-  {
-    title: "Bridal",
-    description: "Complete bridal packages for your special day",
+    title: "Dressing",
+    description: "Personalized styling and wardrobe consultations to elevate your fashion game",
     image: serviceBridal,
-    price: "From $500",
+    price: "From rs.2,000",
   },
   {
-    title: "Spa Treatments",
-    description: "Indulgent body treatments and wellness therapies",
+    title: "Manicure/Pedicure",
+    description: "Luxurious nail care and pampering for your hands and feet-",
     image: serviceSkincare, // Replace with serviceSpa when you add the image
-    price: "From $150",
+    price: "From rs.1,500",
   },
 ];
 

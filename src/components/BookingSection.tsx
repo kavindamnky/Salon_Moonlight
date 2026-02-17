@@ -141,7 +141,7 @@ const BookingSection = () => {
 Please confirm my booking. Thank you!`;
 
     // Open WhatsApp with pre-filled message
-    const whatsappUrl = `https://wa.me/+94704966675?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+94786173173?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
     
     // Reset form after 2 seconds
@@ -175,8 +175,10 @@ Please confirm my booking. Thank you!`;
   return (
     <section id="booking" className="section-padding relative overflow-hidden bg-black">
       {/* Decorative elements */}
-      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-gold/5 blur-3xl" />
-      <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-gold/5 blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(234,179,8,0.05),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(234,179,8,0.05),transparent_50%)]"></div>
+      
+      <div className="container-luxury relative z-10 max-w-7xl mx-auto px-4"/>
       
       <div className="container-luxury relative z-10">
         {/* Section Header */}

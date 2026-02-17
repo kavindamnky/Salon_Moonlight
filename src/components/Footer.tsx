@@ -11,18 +11,18 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
- 
-            <img 
-              src="https://res.cloudinary.com/df5ahm9sm/image/upload/v1768989887/logo_moonlightlong_izcp91.png" 
-              alt="Moonlight Salon" 
-              className="h-12 w-auto md:h-14"
-            />
-           
-            
+
+              <img
+                src="https://res.cloudinary.com/df5ahm9sm/image/upload/v1768989887/logo_moonlightlong_izcp91.png"
+                alt="Moonlight Salon"
+                className="h-12 w-auto md:h-14"
+              />
+
+
             </div>
             <p className="max-w-sm text-cream/70 leading-relaxed">
-              Where elegance meets beauty. Experience luxury beauty services 
-              that illuminate your natural radiance and leave you feeling 
+              Where elegance meets beauty. Experience luxury beauty services
+              that illuminate your natural radiance and leave you feeling
               absolutely radiant.
             </p>
           </div>
@@ -72,7 +72,11 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-cream/50">
-            © {currentYear} VikumKavinda. All rights reserved.
+            © {currentYear}
+              <a href="#" className="transition-colors hover:text-sky-300">
+                  VikumKavindaNarangoda.
+              </a>
+            All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-cream/50">
             <a href="#" className="transition-colors hover:text-gold">

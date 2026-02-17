@@ -8,13 +8,18 @@ import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
+// Grid layout (4 columns):
+// [1: col1, row1-2] [2: col2-3, row1] [3: col4, row1-2]
+// [_: col1, row1-2] [4: col2-3, row2] [_: col4, row1-2]
+// [5: col1-2, row3] [6: col3-4, row3]
+
 const galleryImages = [
-  { src: gallery1, alt: "Beautiful makeup result", span: "row-span-2" },
-  { src: gallery2, alt: "Elegant bridal hairstyle", span: "col-span-2" },
-  { src: gallery3, alt: "Gold eye makeup", span: "row-span-2" },
-  { src: gallery4, alt: "Luxury nail art", span: "col-span-2" },
-  { src: gallery5, alt: "Salon interior", span: "row-span-2" },
-  { src: gallery6, alt: "Hair coloring result", span: "col-span-2" },
+  { src: gallery1, alt: "Beautiful makeup result",    className: "col-start-1 col-span-1 row-start-1 row-span-2" },
+  { src: gallery2, alt: "Elegant bridal hairstyle",   className: "col-start-2 col-span-2 row-start-1 row-span-1" },
+  { src: gallery3, alt: "Gold eye makeup",            className: "col-start-4 col-span-1 row-start-1 row-span-2" },
+  { src: gallery4, alt: "Luxury nail art",            className: "col-start-2 col-span-2 row-start-2 row-span-1" },
+  { src: gallery5, alt: "Salon interior",             className: "col-start-1 col-span-2 row-start-3 row-span-1" },
+  { src: gallery6, alt: "Hair coloring result",       className: "col-start-3 col-span-2 row-start-3 row-span-1" },
 ];
 
 const GallerySection = () => {
@@ -45,9 +50,15 @@ const GallerySection = () => {
             Each image tells a story of beauty, elegance, and expert craftsmanship.
           </p>
         </motion.div>
-  
-        {/* Masonry Grid */}
-        <div className="grid auto-rows-[200px] grid-cols-2 gap-4 md:grid-cols-4 md:auto-rows-[250px]">
+
+        {/* Fixed Masonry Grid — explicit placement, no gaps */}
+        <div
+          className="grid gap-4"
+          style={{
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gridTemplateRows: "repeat(3, 250px)",
+          }}
+        >
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
@@ -55,7 +66,7 @@ const GallerySection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`group relative cursor-pointer overflow-hidden rounded-xl ${image.span}`}
+              className={`group relative cursor-pointer overflow-hidden rounded-xl ${image.className}`}
               onClick={() => setSelectedImage(image.src)}
             >
               <img
@@ -65,10 +76,10 @@ const GallerySection = () => {
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-charcoal/0 transition-all duration-300 group-hover:bg-charcoal/40" />
-              
+
               {/* Gold border */}
               <div className="absolute inset-0 rounded-xl border-2 border-transparent transition-all duration-300 group-hover:border-gold/50" />
-              
+
               {/* View icon */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90">
