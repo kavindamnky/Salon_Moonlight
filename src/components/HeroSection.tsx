@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 3 }}
           className="mb-4 text-sm tracking-[0.3em] text-amber-500 md:text-base"
         >
-          WHERE ELEGANCE MEETS BEAUTY
+          WHERE STYLE MEETS ELEGENCE
         </motion.p>
 
         {/* Main Heading */}
