@@ -2,10 +2,10 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 
 const stats = [
-  { number: 10, suffix: "+", label: "Years Experience" },
+  { number: 2, suffix: "+", label: "Years Experience" },
   { number: 5000, suffix: "+", label: "Happy Clients", prefix: "" },
-  { number: 15, suffix: "", label: "Expert Artists" },
-  { number: 50, suffix: "+", label: "Beauty Awards" },
+  { number: 10, suffix: "", label: "Expert Artists" },
+  { number: 1, suffix: "+", label: "Beauty Awards" },
 ];
 
 // Counter animation hook
@@ -113,7 +113,7 @@ const AboutSection = () => {
             
             <div className="space-y-6 text-amber-50 opacity-50">
               <p className="text-lg leading-relaxed">
-                Founded in 2014, Moonlight Salon emerged from a vision to create 
+                Founded in 2025, Moonlight Salon emerged from a vision to create 
                 a sanctuary where beauty and tranquility intertwine. Our name draws 
                 inspiration from the gentle, transformative glow of moonlight—soft 
                 yet powerful, illuminating natural beauty.
